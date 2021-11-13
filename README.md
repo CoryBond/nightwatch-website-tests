@@ -1,45 +1,5 @@
-# Nightwatch.js Website Tests
+# Nightwatch.js Website Tests (forked by Cory Bond)
 
+I made this fork to quickly test something out. Basically I had a testing env in another project which had firefox v89 installed and I was getting `window.TestingLibraryDom is undefined` for the testing library I wanted to use. I wanted to see if this error only exists for the particular version of firefox I was using so I ran this library on firefox 94.0.1 in this repo... and unfortunately I continue to see the same errors. Seems related to https://github.com/testing-library/nightwatch-testing-library/issues/31 though that github issue was closed (might need reopening to fix this.)
 
-[![npm](https://img.shields.io/npm/v/nightwatch.svg)](https://www.npmjs.com/package/nightwatch)
-[![Build Status](https://travis-ci.org/nightwatchjs/nightwatch.svg?branch=master)](https://travis-ci.org/nightwatchjs/nightwatch) 
-[![Coverage Status](https://coveralls.io/repos/nightwatchjs/nightwatch/badge.svg?branch=master&service=github)](https://coveralls.io/github/nightwatchjs/nightwatch?branch=master)
-***
-Nightwatch.js example tests which run against the [Nightwatch.js](http://nightwatchjs.org) documentation website, using Firefox.
-
-## 1. Install Firefox
-Visit the Mozilla Firefox website: https://www.mozilla.org/en-US/firefox/new/
-
-## 2. git clone
-This will clone the project, install Nightwatch and also the GeckoDriver which is required to interact with the Firefox browser.
-No Selenium Server is required.
-
-```sh
-$ git clone https://github.com/nightwatchjs/nightwatch-website-tests.git
-$ cd nightwatch-website-tests
-$ npm install
-```
-
-## 3. Run tests
-To run the tests using Firefox simply run the command:
-
-```sh
-$ npm test
-```
-
-### Geckodriver documentation
-Geckodriver is a proxy for using [W3C WebDriver](https://www.w3.org/TR/webdriver1/)-compatible clients to interact with Gecko-based browsers, such as Firefox.
-
-Documentation is available at:
-https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html
-
-### Changelog
-The release history and changelog is available on the [GitHub Releases](https://github.com/nightwatchjs/nightwatch/releases) page.
-
-### Updates
-We use [Twitter](https://twitter.com/nightwatchjs) to communicate updates regarding development and to announce releases. Follow [@nightwatchjs](https://twitter.com/nightwatchjs) to get the latest or if you wish to get in touch. 
-
-### Support Nightwatch on OpenCollective
-Please consider supporting Nightwatch by becoming a backer on the [OpenCollective](https://opencollective.com/nightwatch/) platform.
-
-[![Open Collective](https://opencollective.com/nightwatch/tiers/backers.svg?avatarHeight=60)](https://opencollective.com/nightwatch/contribute/tier/7349-backers)
+Output of what you can expect can be found in ./Error_Output.PNG file in the root folder.
