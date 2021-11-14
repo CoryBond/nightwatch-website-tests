@@ -73,6 +73,8 @@ module.exports = {
     firefox: {
       desiredCapabilities: {
         browserName: 'firefox',
+                 javascriptEnabled: true,
+                 "devtools.selfxss.count": 100,
         alwaysMatch: {
           // Enable this if you encounter unexpected SSL certificate errors in Firefox
           // acceptInsecureCerts: true,

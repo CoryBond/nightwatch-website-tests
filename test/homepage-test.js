@@ -9,11 +9,14 @@ module.exports = {
     browser.init();
     browser.waitForElementVisible("body", 1000);
 
-    const {getByText} = getQueriesFrom(browser)
+    const {getAllByText} = getQueriesFrom(browser)
 
-    const input = await getByText('e');
+    console.log("getByText?", getAllByText);
 
-    browser.expect.element(input).to.be.visible;
+    const input = await getAllByText('Nightwatch v2.0-beta');
+
+        console.log("input", input);
+
   },
 
 
